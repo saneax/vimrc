@@ -29,7 +29,7 @@ set noshowmode
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%%F\ %l\:%c
+set statusline+=%F\ %l\:%c
 let g:syntastic_enable_signs=1
 let g:syntastic_quiet_messages = {'level': 'warnings'}
 let g:syntastic_auto_loc_list=1
