@@ -97,3 +97,20 @@ function! s:align()
     call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
   endif
 endfunction
+
+" For those with sadly no function keys available
+" " toggle spelling use \s
+imap <Leader>s <C-o>:setlocal spell! spelllang=en_us<CR>
+nmap <Leader>s :setlocal spell! spelllang=en_us<CR>
+
+"nerdtree specific settings
+
+"Open nerdtree automatically if no file is specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+"shortcut to open nerdtree
+map <C-n> :NERDTreeToggle<CR>
+
+"Close nerdtree, when the last file open is closed.
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
