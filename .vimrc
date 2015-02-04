@@ -101,6 +101,16 @@ endfunction
 imap <Leader>s <C-o>:setlocal spell! spelllang=en_us<CR>
 nmap <Leader>s :setlocal spell! spelllang=en_us<CR>
 
+"spelling shortcuts
+"Here are the commands you need to know:
+"
+"]s — move to the next mispelled word
+"[s — move to the previous mispelled word
+"zg — add a word to the dictionary
+"zug — undo the addition of a word to the dictionary
+"z= — view spelling suggestions for a mispelled word
+
+
 "nerdtree specific settings
 
 "Open nerdtree automatically if no file is specified
