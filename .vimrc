@@ -1,5 +1,5 @@
 call pathogen#infect()
-set background=dark
+set background=light
 syntax on
 filetype on
 colorscheme lucius
@@ -8,6 +8,7 @@ LuciusBlack
 
 set nocompatible
 set t_Co=256
+set synmaxcol=120
 filetype indent plugin on
 set shiftwidth=2
 set softtabstop=2
