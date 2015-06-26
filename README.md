@@ -10,5 +10,28 @@ For Python auto completion
   - url = https://github.com/davidhalter/jedi-vim
   (We also need to do pip install jedi before install the jedi-vim plugin on pathogen)
 
+vimrc should be cloned into .vim folder.
+
+clone
+-----
+remove or rename any existing .vim, .vimrc folder/files
+
+```bash
+cd; git clone https://github.com/saneax/mythings .vim
+```
+
+populate module
+---------------
+
+```bash
+cd ~/.vim
+git submodule init
+git submodule update
+cd
+ln -s .vim/.vimrc .vimrc
+```
+
+
+
 
 
