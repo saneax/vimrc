@@ -113,6 +113,7 @@ nmap <Leader>s :setlocal spell! spelllang=en_us<CR>
 
 
 "nerdtree specific settings
+let g:NERDTreeDirArrows=0
 
 "Open nerdtree automatically if no file is specified
 autocmd StdinReadPre * let s:std_in=1
