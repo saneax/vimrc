@@ -16,6 +16,10 @@ set tabstop=2
 set expandtab
 set smarttab
 set autoindent
+set number
+set cursorline
+set showmatch
+let python_highlight_all = 1
 
 if version >= 703
   if exists('+colorcolumn')
