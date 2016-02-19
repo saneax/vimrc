@@ -20,6 +20,7 @@ set number
 set cursorline
 set showmatch
 let python_highlight_all = 1
+let g:jedi#use_splits_not_buffers = "left"
 
 if version >= 703
   if exists('+colorcolumn')
