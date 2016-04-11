@@ -129,4 +129,8 @@ map <C-n> :NERDTreeToggle<CR>
 
 "Close nerdtree, when the last file open is closed.
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+set t_ku=[A
+set t_kd=[B
+set t_kr=[C
+set t_kl=[D
 
