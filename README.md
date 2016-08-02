@@ -17,7 +17,7 @@ clone
 remove or rename any existing .vim, .vimrc folder/files
 
 ```bash
-cd; git clone https://github.com/saneax/mythings .vim
+cd; git clone https://github.com/saneax/vimrc .vim
 ```
 
 populate module

@@ -6,9 +6,10 @@ colorscheme lucius
 LuciusBlack
 
 
+
 set nocompatible
 set t_Co=256
-set synmaxcol=120
+set synmaxcol=256
 filetype indent plugin on
 set shiftwidth=2
 set softtabstop=2
@@ -19,12 +20,17 @@ set autoindent
 set number
 set cursorline
 set showmatch
+set wrap
+set textwidth=79
+set linebreak
+set wm=0
+set fo=cqt
 let python_highlight_all = 1
 let g:jedi#use_splits_not_buffers = "left"
 
 if version >= 703
   if exists('+colorcolumn')
-    set colorcolumn=120
+    set colorcolumn=80
   endif
 endif
 
@@ -56,7 +62,7 @@ let g:syntastic_quiet_messages = {'level': 'warnings'}
 let g:syntastic_auto_loc_list=1
 
 "extra space highlight (taken from Rushi)
-highlight ExtraWhitespace ctermbg=161 guibg=161
+highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
@@ -129,8 +135,8 @@ map <C-n> :NERDTreeToggle<CR>
 
 "Close nerdtree, when the last file open is closed.
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-set t_ku=[A
-set t_kd=[B
-set t_kr=[C
-set t_kl=[D
+"set t_ku=[A
+"set t_kd=[B
+"set t_kr=[C
+"set t_kl=[D
 
