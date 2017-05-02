@@ -25,3 +25,6 @@
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = https://github.com/klen/python-mode
+[submodule "bundle/vim-ruby"]
+	path = bundle/vim-ruby
+	url = git://github.com/vim-ruby/vim-ruby.git
