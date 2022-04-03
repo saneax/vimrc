@@ -10,24 +10,15 @@
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
-[submodule "bundle/puppet"]
-	path = bundle/puppet
-	url = https://github.com/rodjek/vim-puppet.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/jedi-vim"]
 	path = bundle/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
-[submodule "bundle/vim-ansible-yaml"]
-	path = bundle/ansible-vim-yaml
-	url = https://github.com/pearofducks/ansible-vim.git
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = https://github.com/klen/python-mode
-[submodule "bundle/vim-ruby"]
-	path = bundle/vim-ruby
-	url = https://github.com/vim-ruby/vim-ruby.git
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
 	url = https://github.com/powerline/powerline.git
